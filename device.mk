@@ -16,12 +16,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
+    android.hardware.boot@1.0-service \
+    fastbootd
 
 PRODUCT_PACKAGES += \
-    bootctrl.bengal
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.bengal \
     libgptutils \
     libz \
@@ -33,3 +31,8 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
+
+PRODUCT_PACKAGES_ENG += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
