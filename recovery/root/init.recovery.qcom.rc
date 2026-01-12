@@ -25,6 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 import /vendor/etc/init/hw/init.onyx.rc
+import /system/etc/init/hw/init.rc
 import /init.recovery.qcom_decrypt.rc
 
 on init
